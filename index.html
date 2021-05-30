@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS Calculation</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Teko:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+	<div class="animate">
+		<marquee>
+		<h1 class="Javascript Calculation">Javascript Calculation</h1>
+	    </marquee>
+	</div>
+	<div class="container">
+		<div class="calculation">
+			<div class="add cmn">
+				<h2>addition</h2>
+				<h2>addition</h2>
+				<div class="cmn-calculation">
+					<h3>1st Amount : 850</h3>
+					<h3>2nd Amount : 400</h3>
+				</div>
+				<div class="result plus"></div>
+				<button onclick="addNumbers();">
+					<p>click here</p>
+				</button>
+			</div>
+		</div>
+		<div class="calculation">
+			<div class="add cmn sub-bg">
+				<h2>subtraction</h2>
+				<h2>subtraction</h2>
+				<div class="cmn-calculation">
+					<h3>1st Amount : 1000</h3>
+					<h3>2nd Amount : 650</h3>
+				</div>
+				<div class="result minus"></div>
+				<button onclick="subNumbers();">
+					<p>click here</p>
+				</button>
+			</div>
+		</div>
+		<div class="calculation">
+			<div class="add cmn multiply-bg">
+				<h2>multiplication</h2>
+				<h2>multiplication</h2>
+				<div class="cmn-calculation">
+					<h3>1st Amount : 150</h3>
+					<h3>2nd Amount : 70</h3>
+				</div>
+				<div class="result multiply"></div>
+				<button onclick="multiplyNumbers();">
+					<p>click here</p>
+				</button>
+			</div>
+		</div>
+		<div class="calculation">
+			<div class="add cmn division-bg">
+				<h2>division</h2>
+				<h2>division</h2>
+				<div class="cmn-calculation">
+					<h3>1st Amount : 700</h3>
+					<h3>2nd Amount : 50</h3>
+				</div>
+				<div class="result division"></div>
+				<button onclick="divisionNumbers();">
+					<p>click here</p>
+				</button>
+			</div>
+		</div>
+		<div class="calculation">
+			<div class="add cmn modulus-bg">
+				<h2>Modulus</h2>
+				<h2>Modulus</h2>
+				<div class="cmn-calculation">
+					<h3>1st Amount : 900</h3>
+					<h3>2nd Amount : 440</h3>
+				</div>
+				<div class="result modulus"></div>
+				<button onclick="modulusNumbers();">
+					<p>click here</p>
+				</button>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<script>
+		function addNumbers(){
+			var a = 850;
+			var b = 400;
+			var add = a + b;
+			document.getElementsByClassName('plus')[0].innerHTML = add;
+		}
+		function subNumbers(){
+			var a = 1000;
+			var b = 650;
+			var sub = a - b;
+			document.getElementsByClassName('minus')[0].innerHTML = sub;
+		}
+		function multiplyNumbers(){
+			var a = 150;
+			var b = 70;
+			var multiple = a * b;
+			document.getElementsByClassName('multiply')[0].innerHTML = multiple;
+		}
+		function divisionNumbers(){
+			var a = 700;
+			var b = 50;
+			var division = a / b;
+			document.getElementsByClassName('division')[0].innerHTML = division;
+		}
+		function modulusNumbers(){
+			var a = 900;
+			var b = 440;
+			var modulus = a % b;
+			document.getElementsByClassName('modulus')[0].innerHTML = modulus;
+		}
+
+	</script>
+	
+</body>
+</html>
